@@ -1,8 +1,8 @@
-const libreriaTest1 = require('./librerias/libreriaTest1');
+const recorreArray = require('../librerias/recorrerArray.js');
 
 const hobbies = ['correr', 'nadar', 'caminar'];
 
-libreriaTest1.recorrerArray(hobbies);
+recorreArray.recorrerArray(hobbies);
 
 const crearArchivoLibreria = require('./librerias/crearArchivo');
 var textoArchivo = 'Hola, Mundo!';
@@ -13,3 +13,7 @@ const leerArchivo = require('./librerias/leerArchivo');
 var nombreArchivo = 'test.txt';
 
 leerArchivo.leerArchivo(nombreArchivo);
+
+const imprime = require('../librerias/imprimir');
+
+imprime.imprimir('Imprimí algo');
